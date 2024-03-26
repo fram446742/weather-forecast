@@ -19,6 +19,11 @@ Feel free to customize this page further to align with your preferences. Happy f
 
 
 <img width="1233" alt="Captura de pantalla 2024-03-26 111352" src="https://github.com/fram446742/weather-forecast/assets/42354796/03e245c8-0341-45b8-affd-8d4a18c2723a">
+Forecast for New York city
+
 <img width="1230" alt="Captura de pantalla 2024-03-26 111305" src="https://github.com/fram446742/weather-forecast/assets/42354796/bd4049ad-70d0-424c-9065-91d69c06c970">
+Forecast for Tokio city
+
 <img width="1231" alt="Captura de pantalla 2024-03-26 111337" src="https://github.com/fram446742/weather-forecast/assets/42354796/426c7a05-c707-4467-9201-2f835a03c3b6">
+Forecast for Melbourne city
 
