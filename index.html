@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet">
+    <title>Weather Forecast 🌤</title>
+    <link rel="icon" type="image/png" href="assets/pageIcon.png">
+</head>
+
+<body>
+    <article id="bodyArticle">
+        <section id="bodySection">
+            <h1 id="title">Weather Forecast</h1>
+            <div class="selector">
+                <select id="dropdown-selector" onchange="getCity()">
+                    <option selected disabled value="Select city">Select city</option>
+                    <option value="40.7128 74.0060">New York</option>
+                    <option value="-34.6037 -58.3816">Buenos Aires</option>
+                    <option value="40.4168 -3.7038">Madrid</option>
+                    <option value="35.6895 139.6917">Tokio</option>
+                    <option value="-37.8136 144.9631">Melbourne</option>
+                </select>
+                <button id="refresh" disabled onclick="getData()">Get Data!</button>
+                <span id="loading-indicator" class="loader" style="display: none;"></span>
+            </div>
+            <article id="weatherInfo" class="bodyArticle">
+                <p id="pUpdate" class="pWeather">Last updated: </p>
+                <p id="pUpdateApi" class="pWeather">Last updated (Server): </p>
+                <p id="pTemperature" class="pWeather">Current temperature: </p>
+                <p id="pHumidity" class="pWeather">Current humidity: </p>
+                <p id="pPrecipitation" class="pWeather">Precipitation intensity: </p>
+                <p id="pWind" class="pWeather">Current wind speed: </p>
+                <p id="pLatitude" class="pWeather">Latitude: </p>
+                <p id="pLongitude" class="pWeather">Longitude: </p>
+            </article>
+            <article id="forecastInfo" class="bodyArticle">
+                <div class="forecast">
+                    <h2>Forecast by days</h2>
+                    <p id="forecastExplanation">Select a city and press Get Data! to show the weather forecast</p>
+                </div>
+                <div id="forecastContainer">
+                    <section id="foreDay1" class="fDay" hidden>
+                        <p id="pForeDay1" class="pForecast"></p>
+                        <p id="pForeDay1b" class="pForecast"></p>
+                    </section>
+
+                    <section id="foreDay2" class="fDay" hidden>
+                        <p id="pForeDay2" class="pForecast"></p>
+                        <p id="pForeDay2b" class="pForecast"></p>
+                    </section>
+
+                    <section id="foreDay3" class="fDay" hidden>
+                        <p id="pForeDay3" class="pForecast"></p>
+                        <p id="pForeDay3b" class="pForecast"></p>
+                    </section>
+                </div>
+            </article>
+
+        </section>
+        <footer>
+            <b>Informacion proporcionada por</b> <a href="https://open-meteo.com/" target="_blank">Open-Meteo</a>
+            &copy;
+            <br>
+            Redes y Sistemas Web - Grado en Ingenieria Informática
+            <br>
+            Autor: Francisco Vélez
+            <br>
+            <div class="footer">
+                <a href="https://github.com/fram446742" target="_blank"><img src="assets/githubICO.png"
+                        alt="github icon" height="20px"></a>
+                <a href="mailto:franciscomartin.velez@alumno.ucjc.edu">franciscomartin.velez@alumno.ucjc.edu</a>
+            </div>
+        </footer>
+    </article>
+    <script src="js/background.js"></script>
+    <script src="js/serverQueries.js"></script>
+</body>
+
+</html>
