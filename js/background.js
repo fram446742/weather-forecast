@@ -18,7 +18,8 @@ function setBackgroundImage() {
         height = 2160;
     }
 
-    let url = "https://source.unsplash.com/" + width + "x" + height + "/?" + `${city}`;
+    // let url = "https://source.unsplash.com/" + width + "x" + height + "/?" + `${city}`;
+    let url = "https://picsum.photos/" + width + "x" + height;
     const img = new Image();
     const loadingIndicator = document.getElementById('loading-indicator');
     loadingIndicator.style.display = 'block';
