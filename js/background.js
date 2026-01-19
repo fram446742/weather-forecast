@@ -19,7 +19,7 @@ function setBackgroundImage() {
     }
 
     // let url = "https://source.unsplash.com/" + width + "x" + height + "/?" + `${city}`;
-    let url = "https://picsum.photos/" + width + "x" + height;
+    let url = "https://picsum.photos/" + width + "/" + height;
     const img = new Image();
     const loadingIndicator = document.getElementById('loading-indicator');
     loadingIndicator.style.display = 'block';
